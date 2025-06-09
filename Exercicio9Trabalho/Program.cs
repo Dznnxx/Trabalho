@@ -1,13 +1,15 @@
-﻿int x1, x2, y1, y2, deltaX, distancia;
+int Cp, Cm, Cg, total;
 
-Console.WriteLine("Informe x1:");
-x1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Digite a quantidade de camisas pequenas ");
+Cp = Convert.ToInt32(Console.ReadLine());
+Console.Write("Digite a quantidade de camisas médias ");
+Cm = Convert.ToInt32(Console.ReadLine());
+Console.Write("Digite a quantidade de camisas grandes ");
+Cg = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Informe o y1: ");
-y1 = Convert.ToInt32(Console.ReadLine());
+Cp = Cp * 10;
+Cm = Cm * 12;
+Cg = Cg * 15;
+total = Cp + Cm + Cg;
 
-Console.WriteLine("Informe o x2:");
-x2 = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Informe o y2: ");
-y2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"O valor a ser arrecadado é de R$ {total},00");
